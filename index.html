@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help SUPPORT</title>
+    <script>
+        function validateemail(email){ 
+     
+          let x = document.forms["myForm"]["fname"]["password"].value;
+          if (x == "") 
+          {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+          if (!validatePassword(password)) {
+        alert('Password must be at least 8 characters long, include uppercase and lowercase letters, a number, and a special character.');
+        return;
+          }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: rgb(27, 26, 27);
+            background-repeat: no-repeat;
+        }
+        #card {
+        background: #1f08a1;
+        border-radius: 15px;
+        box-shadow: 1px 2px 8px rgba(218, 214, 214, 0.65);
+        height: 500px;
+        margin: 6rem auto 8.1rem auto;
+        width: 350px;
+        }
+        #main{
+            text-align: center;
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="card">
+   
+        <div id="card-content">
+            <div id="card-title">
+              <h2 style="text-align: center; padding: 10px;color: rgb(255, 255, 255);font-family: Georgia, 'Times New Roman', Times, serif;">LOGIN</h2>
+              <div id="main">
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    Name: <br><input type="text" name="fname"><br><br>
+                    Father Name: <br><input type="text" name="father name"><br><br>
+
+                    Email:<br><input type="email" name="email" @gmail.com required><br><br>
+
+                    password:<br><input type="password" name="password" placeholder="Password must be  8 characters long"pattern="[a-z A-Z 0-9 #*@!^.;]{8}" required><br><br>
+                    
+                    Phone:<br><input type="tel" name="contact number"placeholder="+91 "pattern="[0-9]{10}"  required><br><br>
+              
+                    <input style="background-color: greenyellow;" type="submit" value="Submit">
+                  </form>
+                </div>
+                
+        </div>
+    </div>
+        </div>
+</body>
+</html
